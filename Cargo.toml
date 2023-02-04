@@ -1,0 +1,16 @@
+[package]
+edition = "2021"
+name = "platz-cli"
+version = "0.5.0"
+
+[[bin]]
+name = "platz"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1.0.66"
+clap = {version = "4.0.18", features = ["derive", "env"]}
+platz-chart-ext = "0.5.0"
+tokio = {version = "1.21.2", features = ["rt", "fs"]}
+tracing = "0.1.37"
+tracing-subscriber = "0.3.16"
